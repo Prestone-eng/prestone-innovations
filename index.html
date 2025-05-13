@@ -1,63 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSTech Innovations</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSTech Innovations</title>
+  <meta name="description" content="PSTech Innovations offers expert tech consulting, data analysis, design, and equipment supply.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      color: #38bdf8;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    section h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0ea5e9;
+    }
+
+    img.sample-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .highlight {
+      color: #rgba(255,99,71,0);
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>PSTech Innovations</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>PSTech Innovations</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="home">
-        <h2>Welcome to PSTech Innovations</h2>
-        <p>Your trusted partner in tech innovation, consulting, and data-driven solutions.</p>
-        <img src="images/sample1.jpg" alt="Technology image" class="sample-img" />
-    </section>
+  <section id="home">
+    <h2>Welcome to <span class="highlight">PSTech Innovations</span></h2>
+    <p>We’re your go-to tech partner for smart solutions, data insights, and cutting-edge support.</p>
+    <img src="images/sample1.jpg" alt="Technology overview" class="sample-img" />
+  </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a forward-thinking company delivering innovative tech consulting, data solutions, and cutting-edge equipment. Our goal is to help businesses thrive in the digital age.</p>
-        <img src="images/sample2.jpg" alt="About image" class="sample-img" />
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>PSTech Innovations is a dynamic technology company offering consulting, software development, data analytics, and high-end equipment. We are driven by innovation and guided by results.</p>
+    <img src="images/sample2.jpg" alt="About us" class="sample-img" />
+  </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Tech Consulting & Digital Transformation</li>
-            <li>Supply of Tech Equipment & Devices</li>
-            <li>Data Analysis, Reporting & Visualization</li>
-            <li>Custom Software & Web Solutions</li>
-            <li>IT Support & Maintenance</li>
-            <li>Graphic Design & Branding</li>
-        </ul>
-        <img src="images/sample3.jpg" alt="Services image" class="sample-img" />
-    </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Tech Consulting & Innovation Strategy</li>
+      <li>Data Analysis & Visualization (Excel, R, Python)</li>
+      <li>Custom Software & Web Development</li>
+      <li>Graphic Design & Branding</li>
+      <li>Cybersecurity & Risk Management</li>
+      <li>Networking & Infrastructure Setup</li>
+      <li>IT Support & Equipment Supply</li>
+    </ul>
+    <img src="images/sample3.jpg" alt="Our services" class="sample-img" />
+  </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form class="contact-form" action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Email: <a href="mailto:prestonecheloti2020@gmail.com">prestonecheloti2020@gmail.com</a></p>
-        <p>Phone: <a href="tel:+254115141088">+254115141088</a></p>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="mailto:prestonecheloti2020@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:prestonecheloti2020@gmail.com">prestonecheloti2020@gmail.com</a></p>
+    <p>Phone: <a href="tel:+254115141088">+254 115 141 000</a></p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 PSTech Innovations. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 PSTech Innovations. Built with 💙 for tech-driven growth.</p>
+  </footer>
 </body>
 </html>
